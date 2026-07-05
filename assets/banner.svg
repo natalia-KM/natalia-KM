@@ -1,0 +1,22 @@
+<svg width="900" height="200" viewBox="0 0 900 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Natalia Kmiecik — Associate Software Engineer at Matillion">
+  <defs>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d5c63"/>
+      <stop offset="1" stop-color="#15a3a3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- back wave (lighter, peeks through the troughs) -->
+  <path d="M0,0 L900,0 L900,150 C765,182 620,132 470,162 C325,185 165,138 0,164 Z" fill="#158a8a" opacity="0.45"/>
+
+  <!-- front wave -->
+  <path d="M0,0 L900,0 L900,138 C765,170 620,118 470,150 C325,180 165,122 0,150 Z" fill="url(#teal)"/>
+
+  <!-- name -->
+  <text x="450" y="80" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="38" font-weight="700" letter-spacing="1.5" fill="#ffffff">Natalia Kmiecik</text>
+
+  <!-- title -->
+  <text x="450" y="114" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="500" letter-spacing="0.5">
+    <tspan fill="#bfe6e6">Associate Software Engineer </tspan><tspan fill="#00524E" font-weight="700">@ </tspan><tspan fill="#00524E" font-weight="600">Matillion</tspan>
+  </text>
+</svg>
