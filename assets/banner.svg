@@ -1,22 +1,48 @@
-<svg width="900" height="200" viewBox="0 0 900 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Natalia Kmiecik — Associate Software Engineer at Matillion">
+<svg width="880" height="280" viewBox="0 0 880 280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NK-OS terminal: Natalia Kmiecik — Associate Software Engineer at Matillion">
   <defs>
-    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0d5c63"/>
-      <stop offset="1" stop-color="#15a3a3"/>
+    <style>
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+      .cursor { animation: blink 1.05s step-end infinite; }
+      @media (prefers-reduced-motion: reduce) { .cursor { animation: none; } }
+    </style>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.015"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.06"/>
     </linearGradient>
   </defs>
 
-  <!-- back wave (lighter, peeks through the troughs) -->
-  <path d="M0,0 L900,0 L900,150 C765,182 620,132 470,162 C325,185 165,138 0,164 Z" fill="#158a8a" opacity="0.45"/>
+  <!-- window -->
+  <rect x="1" y="1" width="878" height="278" rx="14" fill="#1d2021" stroke="#3c3836" stroke-width="1.5"/>
+  <rect x="1" y="1" width="878" height="278" rx="14" fill="url(#scan)"/>
 
-  <!-- front wave -->
-  <path d="M0,0 L900,0 L900,138 C765,170 620,118 470,150 C325,180 165,122 0,150 Z" fill="url(#teal)"/>
+  <!-- title bar -->
+  <path d="M1,15 A14,14 0 0 1 15,1 H865 A14,14 0 0 1 879,15 V44 H1 Z" fill="#282828"/>
+  <line x1="1" y1="44" x2="879" y2="44" stroke="#3c3836" stroke-width="1.5"/>
+  <circle cx="26" cy="22.5" r="6.5" fill="#fb4934"/>
+  <circle cx="48" cy="22.5" r="6.5" fill="#fabd2f"/>
+  <circle cx="70" cy="22.5" r="6.5" fill="#b8bb26"/>
+  <text class="mono" x="440" y="27" text-anchor="middle" font-size="13" fill="#928374">nk-os — natalia@portfolio: ~</text>
 
-  <!-- name -->
-  <text x="450" y="80" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="38" font-weight="700" letter-spacing="1.5" fill="#ffffff">Natalia Kmiecik</text>
+  <!-- terminal body -->
+  <g class="mono">
+    <!-- prompt 1 -->
+    <text x="34" y="96" font-size="16">
+      <tspan fill="#b8bb26">natalia@nk-os</tspan><tspan fill="#928374">:</tspan><tspan fill="#83a598">~</tspan><tspan fill="#928374">$ </tspan><tspan fill="#d5c4a1">whoami</tspan>
+    </text>
 
-  <!-- title -->
-  <text x="450" y="114" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="500" letter-spacing="0.5">
-    <tspan fill="#bfe6e6">Associate Software Engineer </tspan><tspan fill="#00524E" font-weight="700">@ </tspan><tspan fill="#00524E" font-weight="600">Matillion</tspan>
-  </text>
+    <!-- name -->
+    <text x="34" y="150" font-size="42" font-weight="700" fill="#fbf1c7" letter-spacing="0.5">Natalia Kmiecik</text>
+
+    <!-- title -->
+    <text x="34" y="184" font-size="18" fill="#d5c4a1">Associate Software Engineer <tspan fill="#928374">@</tspan> <tspan fill="#fe8019" font-weight="600">Matillion</tspan></text>
+
+    <!-- stack line -->
+    <text x="34" y="216" font-size="14" fill="#928374"># React · TypeScript · Java · Python · Kotlin</text>
+
+    <!-- prompt 2 with blinking cursor -->
+    <text x="34" y="254" font-size="16">
+      <tspan fill="#b8bb26">natalia@nk-os</tspan><tspan fill="#928374">:</tspan><tspan fill="#83a598">~</tspan><tspan fill="#928374">$ </tspan><tspan class="cursor" fill="#d5c4a1">▊</tspan>
+    </text>
+  </g>
 </svg>
