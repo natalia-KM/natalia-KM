@@ -49,16 +49,6 @@ $ ./run itinerary-hub --live
 
 <br>
 
-```console
-$ whoami --short
-```
-
-- **How I work** — well-tested code, clean APIs, and interfaces that get out of the way
-- **Currently learning** — going deeper on backend &amp; infra: Spring, Docker, Fly.io
-- **Also shipping** — production software at Matillion where the source is private
-
-<br>
-
 <p align="center">
   <sub>Full case studies — including private commercial work — live on my <a href="https://natalia-km.github.io"><b>portfolio</b></a>. &nbsp;·&nbsp; <code>[F3]</code> to switch themes over there.</sub>
 </p>
